@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voice Recognition and Speech-to-Text</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #start-btn {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      min-height: 100px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Speech to Text Converter</h1>
+  <button id="start-btn">Start Listening</button>
+  <div id="result">Your speech will appear here...</div>
+
+  <script>
+    const startBtn = document.getElementById('start-btn');
+    const resultDiv = document.getElementById('result');
+
+    // Check if browser supports SpeechRecognition
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    
+    if (!SpeechRecognition) {
+      resultDiv.textContent = 'Your browser does not support Speech Recognition.';
+    } else {
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US'; // You can change this to your preferred language
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      startBtn.addEventListener('click', () => {
+        recognition.start();
+        resultDiv.textContent = "Listening...";
+      });
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        resultDiv.textContent = `You said: "${transcript}"`;
+      };
+
+      recognition.onerror = (event) => {
+        resultDiv.textContent = `Error occurred: ${event.error}`;
+      };
+
+      recognition.onend = () => {
+        // Automatically stop listening when done
+        startBtn.disabled = false;
+      };
+    }
+  </script>
+
+</body>
+</html>
