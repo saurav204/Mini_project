@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about,
+.company {
+    padding: 2rem 13rem 2rem 13rem;
+}
+
+.about h2,
+.company h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about .topic {
+    font-size: 1.4rem;
+    color: purple;
+    margin-top: 1rem;
+}
+
+.parent,
+.icon-container {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.parent div {
+    width: 50%;
+}
+
+.parent div p {
+    margin-bottom: 1rem;
+}
+
+.parent div p:first-child {
+    color: green;
+    font-weight: 700;
+}
+
+.parent div p:nth-child(2) {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.parent div p:last-child {
+    text-align: justify;
+    margin-right: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.icon-container .child {
+    width: 33%;
+}
+img {
+    width: 35vw;
+    float: right;
+}
+
+.child div {
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 4px 15px rgb(171, 171, 171);
+}
+.child div i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4vw;
+    font-size: 1.5rem;
+    color: purple;
+}
+
+.child p {
+    text-align: justify;
+    margin: 1.3rem 1.5rem 1.3rem 1.5rem;
+    font-size: 1.2rem;
+    color: rgb(138, 138, 138);
+}
+
+.child .title {
+    text-align: center;
+    color: black;
+}

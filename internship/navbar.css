@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar_container .icon {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    font-size: 2rem;
+    display: none;
+}
+
+.navbar_container {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    box-shadow: 3px 4px 15px rgb(171, 171, 171);
+}
+
+.navbar_container .child1 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_container .child2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_container .child3 {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_container .child1 img {
+    width: 17vw;
+}
+
+.navbar_container .child2 ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar_container .child2 ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar_container .child3 button {
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    background-color: rgb(135, 52, 135);
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:600px) {
+    .navbar_container .child1 {
+        width: 100%;
+        margin-left: 25vw;
+    }
+
+    .navbar_container .child3 {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 30rem;
+        text-align: center;
+    }
+
+    .navbar_container .child2 ul {
+        display: block;
+        position: absolute;
+        top: 20vw;
+        left: 5vw;
+    }
+
+    .navbar_container {
+        height: 25vw;
+        box-shadow: none;
+    }
+
+    .navbar_container .child2 ul li {
+        padding-top: 2rem;
+    }
+
+    .navbar_container .child1 img {
+        width: 100%;
+    }
+
+    .navbar_container .icon {
+        display: block;
+    }
+}

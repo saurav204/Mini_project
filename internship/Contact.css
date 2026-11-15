@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.full_body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 3vw 0vw 3vw 0vw;
+}
+
+.p1 {
+    text-align: center;
+    color: grey;
+    margin-bottom: 8vw;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw 10vw 5vw 10vw;
+    height: 20vw;
+}
+
+.contact div {
+    width: 33%;
+}
+
+.contact_info2 h3 {
+    text-align: center;
+    padding: 3vw 3vw 1vw 3vw;
+}
+
+.contact_info2 li {
+    display: flex;
+    padding: 2.5vw 0vw 2vw 0vw;
+    border-bottom: 1px solid grey;
+}
+
+.contact_info2 li h4 {
+    width: 40%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 1.5vw;
+}
+
+.contact_info2 ul li p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact_info1,
+.contact_info3 {
+    background-color: blueviolet;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact_info2 {
+    height: 28vw;
+    border: 0.1px solid grey;
+    box-shadow: 3px 4px 15px rgb(171, 171, 171);
+}
+
+.contact_info1 i,
+.contact_info3 i {
+    font-size: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.contact_info1 .inner_div {
+    width: 100%;
+    margin-left: 5vw;
+    text-align: center;
+}
