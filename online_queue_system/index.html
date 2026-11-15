@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Queue System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#slot">Slot Status</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Dr. Smith's Clinic</h2>
+    <p>Manage your time better with our real-time queue and booking system. No more long waits!</p>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Book Your Slot</h2>
+    <p>Enter your name to join the queue:</p>
+    <input type="text" id="patientName" placeholder="Your Name" />
+    <button onclick="joinQueue()">Join Queue</button>
+    <p id="bookingMsg"></p>
+  </section>
+
+  <!-- Slot Status Section -->
+  <section id="slot">
+    <h2>Queue & Slot Status</h2>
+    <div id="queueStatus">
+      <p><strong>Patients Ahead:</strong> <span id="patientsAhead">0</span></p>
+      <p><strong>Estimated Wait Time:</strong> <span id="waitTime">0</span> mins</p>
+    </div>
+    <ul id="queueList"></ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Clinic Address:</strong> 123 Main Street, YourCity</p>
+    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+    <p><strong>Email:</strong> info@drsmithclinic.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Dr. Smith's Clinic | Queue Management System
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
