@@ -1,0 +1,23 @@
+div{
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    border-color: black;
+    display:inline-block;
+}
+#box1{
+    text-align: center;
+}
+#box2{
+text-align: center;
+align-content: center;
+}
+#box3{
+text-align: center;
+align-content: flex-end;
+   
+}
+#box4{
+     position:relative;
+     text-align: center; 
+}
